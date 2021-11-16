@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="8c3e7773-fc01-40f8-9442-c713389fc898" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Create user Test" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="8c3e7773-fc01-40f8-9442-c713389fc898fileName">Create-user-Test</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="59e7f784-8e49-4ced-ada1-efe51bf6c2ca">
+    <con:settings/>
+    <con:config service="Get User" resourcePath="/api/v1/user/" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="b85f8506-770a-4f87-b80c-dcb2c957135f" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://www.test-insurance.com/api/v1/user</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://www.test-insurance.com/api/v1/user/api/v1/user</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="8c6bbc73-961b-4137-837c-8a1a557845b0" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="330f6ccd-9fb6-4d74-83ca-7e6f8c01dedb" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="id" value="2881"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>id</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

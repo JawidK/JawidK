@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="1b8a09d8-0e65-4050-800c-e3272169dcc9" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Update User" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="1b8a09d8-0e65-4050-800c-e3272169dcc9fileName">Update-User</con:setting>
+  </con:settings>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="538daeb1-3e50-42e4-bbfd-e3cbfba67495" name="Get User" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <con:settings>
+    <con:setting id="538daeb1-3e50-42e4-bbfd-e3cbfba67495fileName">Get-User</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart="Creat User.json">
+    <con:part>
+      <con:url>Creat User.json</con:url>
+      <con:content>{"openapi":"3.0.1","info":{"title":"Creat User","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"/api/v1/user/":{"description":"","get":{"description":"","responses":{"default":{"description":"Default response"}}},"put":{"description":"","requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}},"post":{"description":"","requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}},"delete":{"description":"","parameters":[{"name":"id","in":"query","required":true,"schema":{"type":"string"}}],"requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}},"parameters":[{"name":"id","in":"path","required":true}]}}}</con:content>
+      <con:type>https://swagger.io/openapiv3/specification</con:type>
+    </con:part>
+  </con:definitionCache>
+  <con:endpoints/>
+</con:interface>

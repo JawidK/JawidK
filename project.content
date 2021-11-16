@@ -1,0 +1,6 @@
+Get-User\%2Fapi%2Fv1%2Fuser%2F.xml
+Regression-Test-Suite\Create-user-Test.xml
+Regression-Test-Suite\Get-user-Positive-Test-Case.xml
+Regression-Test-Suite\Update-User.xml
+Regression-Test-Suite\Delete-User.xml
+Class-Practice\Create-user-Test.xml

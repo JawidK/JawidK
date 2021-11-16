@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="" path="/api/v1/user/" id="17b02bf0-eda7-4034-ba41-7dee4db3ecba" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="17b02bf0-eda7-4034-ba41-7dee4db3ecbafileName">%2Fapi%2Fv1%2Fuser%2F</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter>
+      <con:name>id</con:name>
+      <con:style>TEMPLATE</con:style>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="Method 1" id="f4440355-a959-4d73-91e6-0460608369ff" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="retrieveUser" id="b85f8506-770a-4f87-b80c-dcb2c957135f" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://www.test-insurance.com/api/v1/user</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://www.test-insurance.com/api/v1/user/api/v1/user</con:originalUri>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="id" value="2881"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>id</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+  <con:method name="Method 2" id="89ece6ec-065a-499e-a352-0d6436327978" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="createUser" id="512100ef-953e-4a0d-a967-594e69bbf372" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:request/>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder>
+        <con:entry>id</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+  <con:method name="Method 3" id="a22cceaa-a7ac-4dfd-ad23-558e04410ede" method="PUT">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="updateUser" id="e4689798-b7dc-42d7-813e-d95585e446bf" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:request/>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder>
+        <con:entry>id</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+  <con:method name="Method 4" id="08ef0a8d-946a-40ed-803e-c77c50ba41de" method="DELETE">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>id</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="DeleteUser" id="97e416c1-21df-46b1-a385-c297d618e809" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:request/>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder>
+        <con:entry>id</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>
